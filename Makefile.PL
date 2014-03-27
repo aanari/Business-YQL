@@ -23,7 +23,7 @@ my %WriteMakefileArgs = (
   "PREREQ_PM" => {
     "Carp" => 0,
     "HTTP::Request::Common" => 0,
-    "JSON::Any" => 0,
+    "JSON" => 0,
     "LWP::UserAgent" => 0,
     "List::Util" => "1.35",
     "Log::Any" => "0.15",
@@ -44,7 +44,7 @@ my %WriteMakefileArgs = (
     "strict" => 0,
     "warnings" => 0
   },
-  "VERSION" => "0.0002",
+  "VERSION" => "0.0003",
   "test" => {
     "TESTS" => "t/*.t"
   }
@@ -57,7 +57,7 @@ my %FallbackPrereqs = (
   "HTTP::Request::Common" => 0,
   "IO::Handle" => 0,
   "IPC::Open3" => 0,
-  "JSON::Any" => 0,
+  "JSON" => 0,
   "LWP::UserAgent" => 0,
   "List::Util" => "1.35",
   "Log::Any" => "0.15",
