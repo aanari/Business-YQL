@@ -24,10 +24,11 @@ sub _enable_logging {
 
 my $yql = Business::YQL->new;
 
-_enable_logging;
+#_enable_logging;
 
 ok $yql->q('show tables');
 ok $yql->q("select * from yahoo.finance.xchange where pair in ('CADGBP')");
 ok $yql->q("SELECT * from geo.places WHERE text='San Francisco'");
+ok $yql->q("INSERT INTO yahoo.y.ahoo.it (url) VALUES ('http://google.com')");
 
 done_testing;
