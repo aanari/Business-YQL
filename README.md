@@ -4,7 +4,7 @@ Business::YQL - YQL Perl interface for the Y! Query API
 
 # VERSION
 
-version 0.0003
+version 0.0004
 
 # SYNOPSIS
 

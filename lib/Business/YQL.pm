@@ -78,7 +78,7 @@ sub _req {
 
 sub _log_content {
     my ($self, $content) = @_;
-    if (length $content) {
+    if ($content && length $content) {
         try {
             $content = to_json from_json $content;
             $log->trace($content);
@@ -97,7 +97,6 @@ sub _log_request {
 sub _log_response {
     my ($self, $res) = @_;
     $log->trace($res->status_line);
-    my $content = $res->content;
     _log_content $res->content;
 }
 
